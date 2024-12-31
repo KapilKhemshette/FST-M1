@@ -1,0 +1,2 @@
+select order_NO,sum(PURCHASE_AMOUNT) as total_Purchase from orders
+    group by order_NO;
