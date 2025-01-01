@@ -2,6 +2,6 @@ numbers = list(map(int,input("Enter a sequence of comma separated values: ").spl
 sum = 0
 print(numbers)
 for number in numbers:
-  sum += int(number)
+  sum += number
 
 print(sum)
