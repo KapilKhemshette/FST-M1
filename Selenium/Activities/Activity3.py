@@ -7,7 +7,7 @@ with webdriver.Firefox() as driver:
     driver.find_element(By.XPATH,"//input[@id='username']").send_keys("admin")
     driver.find_element(By.XPATH,"//input[@id='password']").send_keys("password")
     driver.find_element(By.XPATH,"//button[text()='Submit']").click()
-    x=driver.find_element(By.CSS_SELECTOR, "h1.text-center").text
+    x=driver.find_element(By.XPATH, "//h1[contains(@class, 'text-center')]").text
 
 
     # Print the title of the new page
